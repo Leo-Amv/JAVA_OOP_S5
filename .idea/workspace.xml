@@ -4,19 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="48f03022-2920-4a3d-b0b1-ef5a44dad49b" name="Changes" comment="Init commit">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/gb/oseminar5/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/gb/oseminar5/exception/CommandException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/gb/oseminar5/model/FileOperation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/gb/oseminar5/model/FileOperationImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/gb/oseminar5/model/Repository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/gb/oseminar5/model/RepositoryFile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/gb/oseminar5/model/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/gb/oseminar5/model/UserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/gb/oseminar5/view/Commands.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/gb/oseminar5/view/ViewUser.java" afterDir="false" />
+    <list default="true" id="48f03022-2920-4a3d-b0b1-ef5a44dad49b" name="Changes" comment="ClassWork added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/gb/oseminar5/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/gb/oseminar5/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/gb/oseminar5/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/gb/oseminar5/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/gb/oseminar5/view/Commands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/gb/oseminar5/view/Commands.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/gb/oseminar5/view/ViewUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/gb/oseminar5/view/ViewUser.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,15 +36,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.Color Scheme Font"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -62,7 +54,10 @@
       <option name="presentableId" value="Default" />
       <updated>1670582771954</updated>
       <workItem from="1670582774848" duration="1190000" />
-      <workItem from="1670584406713" duration="934000" />
+      <workItem from="1670584406713" duration="1332000" />
+      <workItem from="1670603466604" duration="2148000" />
+      <workItem from="1670606190823" duration="1132000" />
+      <workItem from="1670667578699" duration="805000" />
     </task>
     <task id="LOCAL-00001" summary="Init commit">
       <created>1670582966056</created>
@@ -71,7 +66,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670582966056</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="ClassWork added">
+      <created>1670585720658</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1670585720658</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -90,7 +92,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Init commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Init commit" />
+    <MESSAGE value="ClassWork added" />
+    <option name="LAST_COMMIT_MESSAGE" value="ClassWork added" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

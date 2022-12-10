@@ -6,14 +6,14 @@ import ru.gb.oseminar5.model.User;
 import java.util.Scanner;
 
 public class ViewUser {
-    private UserController userController;
+    private final UserController userController;
 
     public ViewUser(UserController userController) {
         this.userController = userController;
     }
 
     public void run(){
-        Commands com = Commands.NONE;
+        Commands com;
 
         while (true) {
             try {
@@ -31,6 +31,7 @@ public class ViewUser {
                         String lastName = prompt("Фамилия: ");
                         String phone = prompt("Номер телефона: ");
                         userController.saveUser(new User(firstName, lastName, phone));
+                        System.out.println("Successfully created!");
                     } catch (IllegalStateException e) {
                         System.out.println(e.getMessage());
                         continue;
@@ -40,20 +41,44 @@ public class ViewUser {
                     String id = prompt("Идентификатор пользователя: ");
                     try {
                         User user = userController.readUser(id);
-                        System.out.println(user);
+                        System.out.println("User founded:\n"+user);
                     } catch (Exception e) {
-                        throw new RuntimeException(e);
+                        System.out.println(e.getMessage());
                     }
                     break;
                 case LIST:
-                    userController.readUsers().forEach(System.out::println);
+                    userController.readUsers().forEach(user -> System.out.println(user+"\n"));
                     break;
                 case UPDATE:
                     String firstName = prompt("Имя: ");
                     String lastName = prompt("Фамилия: ");
                     String phone = prompt("Номер телефона: ");
                     String userID = prompt("Идентификатор пользователя: ");
-                    userController.editUser(new User(userID, firstName, lastName, phone));
+                    try{
+                        userController.editUser(new User(userID, firstName, lastName, phone));
+                        System.out.println("Successfully updated!");
+                    }catch (IllegalStateException e){
+                        System.out.println(e.getMessage());
+                    }
+                    break;
+                case DELETE:
+                    String userToDeleteID = prompt("Идентификатор пользователя: ");
+                    try{
+                        userController.deleteUser(userToDeleteID);
+                        System.out.println("Successfully deleted!");
+                    } catch (IllegalStateException e){
+                        System.out.println(e.getMessage());
+                    }
+                    break;
+                case HELP:
+                    System.out.println("Commands:" +
+                            "\nCREATE\tCreate new user and save" +
+                            "\nREAD\tFind user by id" +
+                            "\nLIST\tShow all users" +
+                            "\nUPDATE\tEdit user by id" +
+                            "\nDELETE\tDelete user by id" +
+                            "\nEXIT\tExit program");
+                    break;
             }
         }
     }

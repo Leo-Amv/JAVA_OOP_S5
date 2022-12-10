@@ -39,5 +39,7 @@ import java.util.List;
             validateUserData(user);
             repository.updateUser(user);
         }
-
+        public void deleteUser(String userID){
+            repository.deleteUser(userID);
+        }
     }
